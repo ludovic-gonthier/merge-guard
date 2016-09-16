@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Github - Merge Guard",
+  "version": "1.0.0",
+  "author": "Ludovic Gonthier",
+  "description": "Guard the merge of temporary work",
+  "icons": { "128": "merge-guard.png" },
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["merge-guard.js"]
+    }
+  ]
+}
+
