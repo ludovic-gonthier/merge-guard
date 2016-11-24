@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Github - Merge Guard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Ludovic Gonthier",
   "description": "Guard the merge of temporary work",
   "icons": { "128": "merge-guard.png" },
