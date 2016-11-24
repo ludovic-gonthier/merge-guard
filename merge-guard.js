@@ -29,12 +29,14 @@
         return REGEX.label.test(label.innerHTML);
       }));
 
-    if (disable.length) {
-      button.innerHTML = 'WIP/fixup! Can\'t merge pull request';
-      button.setAttribute('disabled', 'disabled');
-    } else {
-      button.innerHTML = 'Merge pull request';
-      button.removeAttribute('disabled');
+    if (button.classList.contains('btn-primary')) {
+      if (disable.length) {
+        button.innerHTML = 'WIP/fixup! Can\'t merge pull request';
+        button.setAttribute('disabled', 'disabled');
+      } else {
+        button.innerHTML = 'Merge pull request';
+        button.removeAttribute('disabled');
+      }
     }
   }
 
