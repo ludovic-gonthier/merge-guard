@@ -5,6 +5,11 @@
   };
   var REFRESH_INTERVAL = 1000;
 
+  // Exit if the merge button is not found
+  if (!document.querySelectorAll('.btn-group-merge button[type=submit]')[0]) {
+    return;
+  }
+
   function refresh() {
     var button = document.querySelectorAll('.btn-group-merge button[type=submit]')[0];
     var commits = document.querySelectorAll('.commit-message .message');
